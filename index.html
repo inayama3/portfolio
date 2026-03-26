@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miima | VIDEO PRODUCTION · EDUCATION</title>
+    <meta name="description" content="miima - 映像制作・教育。企画から撮影・編集まで、ワンストップで映像制作を承ります。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/nav-logo.png" alt="miima" class="nav-logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">Profile</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#history" class="nav-link">History</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="#about" class="mobile-link">Profile</a></li>
+            <li><a href="#works" class="mobile-link">Works</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#history" class="mobile-link">History</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+
+        <!-- ============ 1. ファーストビュー ============ -->
+        <section id="hero" class="hero">
+            <div class="hero-inner">
+                <div class="hero-logo-area reveal">
+                    <img src="assets/logo.png" alt="miima" class="hero-logo" id="heroLogo">
+                </div>
+                <h1 class="hero-catchcopy reveal" id="heroCatchcopy"></h1>
+                <p class="hero-description reveal" id="heroDescription"></p>
+                <div class="hero-cta reveal" id="heroCta"></div>
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 2. プロフィール ============ -->
+        <section id="about" class="section section--alt">
+            <div class="section-inner">
+                <div class="section-header reveal">
+                    <span class="section-label">Profile</span>
+                    <h2 class="section-title">プロフィール</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-profile reveal">
+                        <div class="about-image-wrapper">
+                            <img src="" alt="プロフィール写真" class="about-image" id="aboutImage">
+                        </div>
+                        <div class="about-text">
+                            <h3 class="about-name" id="aboutName"></h3>
+                            <p class="about-title-text" id="aboutTitle"></p>
+                            <p class="about-intro" id="aboutIntro"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="sns-cards reveal" id="snsCards"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 3. 制作実績 ============ -->
+        <section id="works" class="section">
+            <div class="section-inner">
+                <div class="section-header reveal">
+                    <span class="section-label">Works</span>
+                    <h2 class="section-title">制作実績</h2>
+                </div>
+                <div class="works-filter reveal" id="worksFilter"></div>
+                <div class="works-grid" id="worksGrid"></div>
+                <div class="works-footer reveal">
+                    <p class="works-footer-text">その他個別公開可能な制作動画もございます。<a href="#contact" style="text-decoration: underline; color: var(--accent-blue-light); font-weight: 500;">下記フォーム</a>よりお気軽にお問い合わせください。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 4. 事業内容 ============ -->
+        <section id="services" class="section section--alt">
+            <div class="section-inner">
+                <div class="section-header">
+                    <span class="section-label">Services</span>
+                    <h2 class="section-title">事業内容</h2>
+                </div>
+                <div class="services-grid" id="servicesGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ 5. 経歴・実績 ============ -->
+        <section id="history" class="section">
+            <div class="section-inner">
+                <div class="section-header reveal">
+                    <span class="section-label">History & Achievements</span>
+                    <h2 class="section-title">経歴・実績</h2>
+                </div>
+                
+                <div class="history-grid">
+                    <div class="history-column reveal">
+                        <h3 class="column-title">経歴</h3>
+                        <div class="timeline" id="timeline"></div>
+                    </div>
+                    <div class="history-column reveal">
+                        <h3 class="column-title">実績</h3>
+                        <div class="timeline" id="achievementsTimeline"></div>
+                    </div>
+                </div>
+
+                <div class="accordion-container reveal" style="margin-top: 4rem;">
+                    <details class="accordion">
+                        <summary class="accordion-header">
+                            <h3 class="accordion-title">使用可能ソフト・所持機材</h3>
+                            <span class="accordion-icon">+</span>
+                        </summary>
+                        <div class="accordion-content">
+                            <div class="about-specialties" style="margin-bottom: 2rem;">
+                                <h4 class="specialties-heading">使用可能ソフト</h4>
+                                <div class="specialties-tags" id="softwareList"></div>
+                            </div>
+                            <div class="about-specialties">
+                                <h4 class="specialties-heading">所持機材</h4>
+                                <ul class="equipment-list" id="equipmentList"></ul>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 7. お問い合わせ ============ -->
+        <section id="contact" class="section">
+            <div class="section-inner">
+                <div class="section-header reveal">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title" id="contactHeading"></h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-area reveal">
+                        <p class="contact-description" id="contactDescription"></p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">お名前 <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="name" required placeholder="山田 太郎">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" required placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCategory">お問い合わせ種別</label>
+                                <select id="contactCategory" name="category"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">お問い合わせ内容 <span class="required">*</span></label>
+                                <textarea id="contactMessage" name="message" required rows="6" placeholder="ご相談内容をご記入ください"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">送信する</button>
+                        </form>
+                    </div>
+                    <div class="contact-info reveal">
+                        <div class="contact-info-card">
+                            <h4>メールでのお問い合わせ</h4>
+                            <div class="contact-email-display" id="contactEmailDisplay"></div>
+                            <p class="contact-email-note">※＠を半角に変えてください</p>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <p class="contact-response" id="contactResponse"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <img src="assets/nav-logo.png" alt="miima" class="footer-logo">
+            <p class="footer-copy" id="footerCopy"></p>
+        </div>
+    </footer>
+
+    <!-- 実績詳細モーダル -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="閉じる">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="siteData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
