@@ -203,10 +203,10 @@ function initAbout(data) {
     if (data.snsLinks) {
         const snsContainer = document.getElementById('snsCards');
         const snsIcons = {
-            note: '📝',
-            x: '𝕏',
-            instagram: '📷',
-            facebook: '📘'
+            note: '<img src="assets/square.png" alt="note" class="sns-img-icon">',
+            x: '<img src="assets/logo-black.png" alt="X" class="sns-img-icon">',
+            instagram: '<img src="assets/Instagram_Glyph_Gradient.png" alt="Instagram" class="sns-img-icon">',
+            facebook: '<img src="assets/Facebook_Logo_Primary.png" alt="Facebook" class="sns-img-icon">'
         };
         
         data.snsLinks.forEach(s => {

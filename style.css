@@ -915,17 +915,18 @@ h1, h2, h3, h4 {
 }
 
 .sns-card-icon {
-    width: 24px;
-    height: 24px;
-    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sns-card-icon--x { color: var(--text-primary); }
-.sns-card-icon--instagram { color: #E1306C; }
-.sns-card-icon--facebook { color: #1877F2; }
-.sns-card-icon--note { color: #2CB696; }
+
+.sns-img-icon {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
 
 .about-specialties {
     margin-top: 1rem;
@@ -1463,11 +1464,14 @@ h1, h2, h3, h4 {
     .sns-card-icon {
         width: 48px;
         height: 48px;
-        font-size: 1.4rem;
         background: var(--card-bg-solid);
         border: 1px solid var(--card-border);
         border-radius: 50%;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .sns-card-title,
