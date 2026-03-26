@@ -279,12 +279,10 @@ function initServices(services) {
         const card = document.createElement('div');
         card.className = 'service-card';
         
-        const numStr = (index + 1).toString().padStart(2, '0');
         const bgStyle = svc.bgImage ? `style="background-image: url('${svc.bgImage}')"` : '';
         
         card.innerHTML = `
             <div class="service-card-bg" ${bgStyle}></div>
-            <span class="service-num">${numStr}</span>
             <div class="service-content">
                 <h4 class="service-title">${svc.title}</h4>
                 <p class="service-desc">${svc.description}</p>
@@ -343,13 +341,18 @@ function initContact(data) {
 
             try {
                 const formData = new FormData(form);
-                const res = await fetch(data.formEndpoint, {
+                const fetchOpts = {
                     method: 'POST',
                     body: formData,
-                    headers: { 'Accept': 'application/json' },
-                });
+                };
+                if (data.formEndpoint.includes('formspree')) {
+                    fetchOpts.headers = { 'Accept': 'application/json' };
+                }
 
-                if (res.ok) {
+                const res = await fetch(data.formEndpoint, fetchOpts);
+
+                if (res.ok || res.status === 302 || res.type === 'opaque') {
+                    // GAS (Google Apps Script) often returns opaque or 302 depending on the redirect
                     submitBtn.textContent = '送信完了 ✓';
                     submitBtn.style.background = '#2d7b5a';
                     form.reset();

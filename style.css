@@ -575,7 +575,7 @@ h1, h2, h3, h4 {
 }
 
 .works-footer-text {
-    font-size: 1.425rem;
+    font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.8;
 }
@@ -1168,17 +1168,7 @@ h1, h2, h3, h4 {
     transform: scale(1.1);
 }
 
-.service-num {
-    position: absolute;
-    top: 1.8rem;
-    right: 2.2rem;
-    font-size: 0.9rem;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0.4);
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0.05em;
-    z-index: 3;
-}
+
 
 .service-content {
     position: relative;
@@ -1442,8 +1432,48 @@ h1, h2, h3, h4 {
         grid-template-columns: 1fr;
     }
 
+    .service-card {
+        min-height: 260px;
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
     .sns-cards {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .sns-card {
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .sns-card:hover {
+        transform: translateY(-4px);
+        box-shadow: none;
+        border-color: transparent;
+    }
+
+    .sns-card-header {
+        margin: 0;
+    }
+
+    .sns-card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+        background: var(--card-bg-solid);
+        border: 1px solid var(--card-border);
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .sns-card-title,
+    .sns-card-desc,
+    .sns-card-url {
+        display: none !important;
     }
 
     .section {
