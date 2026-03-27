@@ -357,6 +357,14 @@ h1, h2, h3, h4 {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
+}
+
+/* iOSなどで表示される再生ボタンを強制非表示 */
+.hero-bg-video::-webkit-media-controls,
+.hero-bg-video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
 }
 
 .hero::before {
