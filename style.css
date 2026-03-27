@@ -393,7 +393,7 @@ h1, h2, h3, h4 {
 }
 
 .hero-logo {
-    height: clamp(60px, 10vw, 100px);
+    height: clamp(78px, 13vw, 130px);
     width: auto;
     margin: 0 auto;
 }
