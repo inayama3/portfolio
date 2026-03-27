@@ -343,9 +343,13 @@ function initContact(data) {
 
             try {
                 const formData = new FormData(form);
+                const params = new URLSearchParams();
+                for (const pair of formData.entries()) {
+                    params.append(pair[0], pair[1]);
+                }
                 const fetchOpts = {
                     method: 'POST',
-                    body: formData,
+                    body: params,
                 };
                 if (data.formEndpoint.includes('formspree')) {
                     fetchOpts.headers = { 'Accept': 'application/json' };
