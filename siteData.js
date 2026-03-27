@@ -86,7 +86,7 @@ const SITE_DATA = {
       thumbnail: "assets/work4.jpg",
     },
     {
-      title: "みのママノシンプルライフ 様",
+      title: "みのママのシンプルライフ 様",
       client: "教育法人E",
       genre: "教育コンテンツ",
       category: "education",
