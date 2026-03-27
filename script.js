@@ -62,14 +62,16 @@ function initHero(data) {
 function initWorks(categories, works) {
     // Filter buttons
     const filterContainer = document.getElementById('worksFilter');
-    categories.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = `filter-btn${cat.id === 'all' ? ' active' : ''}`;
-        btn.dataset.category = cat.id;
-        btn.textContent = cat.label;
-        btn.addEventListener('click', () => filterWorks(cat.id));
-        filterContainer.appendChild(btn);
-    });
+    if (filterContainer) {
+        categories.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.className = `filter-btn${cat.id === 'all' ? ' active' : ''}`;
+            btn.dataset.category = cat.id;
+            btn.textContent = cat.label;
+            btn.addEventListener('click', () => filterWorks(cat.id));
+            filterContainer.appendChild(btn);
+        });
+    }
 
     // Work cards
     const grid = document.getElementById('worksGrid');

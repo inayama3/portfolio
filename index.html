@@ -26,8 +26,8 @@
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about" class="nav-link">Profile</a></li>
-                <li><a href="#works" class="nav-link">Works</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
                 <li><a href="#history" class="nav-link">History</a></li>
                 <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
             </ul>
@@ -43,8 +43,8 @@
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-menu-links">
             <li><a href="#about" class="mobile-link">Profile</a></li>
-            <li><a href="#works" class="mobile-link">Works</a></li>
             <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#works" class="mobile-link">Works</a></li>
             <li><a href="#history" class="mobile-link">History</a></li>
             <li><a href="#contact" class="mobile-link">Contact</a></li>
         </ul>
@@ -54,6 +54,9 @@
 
         <!-- ============ 1. ファーストビュー ============ -->
         <section id="hero" class="hero">
+            <video class="hero-bg-video" autoplay loop muted playsinline>
+                <source src="assets/background.mp4" type="video/mp4">
+            </video>
             <div class="hero-inner">
                 <div class="hero-logo-area reveal">
                     <img src="assets/logo.png" alt="miima" class="hero-logo" id="heroLogo">
@@ -92,29 +95,29 @@
             </div>
         </section>
 
-        <!-- ============ 3. 制作実績 ============ -->
-        <section id="works" class="section">
-            <div class="section-inner">
-                <div class="section-header reveal">
-                    <span class="section-label">Works</span>
-                    <h2 class="section-title">制作実績</h2>
-                </div>
-                <div class="works-filter reveal" id="worksFilter"></div>
-                <div class="works-grid" id="worksGrid"></div>
-                <div class="works-footer reveal">
-                    <p class="works-footer-text">その他個別公開可能な制作動画もございます。<a href="#contact" style="text-decoration: underline; color: var(--accent-blue-light); font-weight: 500;">下記フォーム</a>よりお気軽にお問い合わせください。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============ 4. 事業内容 ============ -->
-        <section id="services" class="section section--alt">
+        <!-- ============ 3. 事業内容 ============ -->
+        <section id="services" class="section">
             <div class="section-inner">
                 <div class="section-header">
                     <span class="section-label">Services</span>
                     <h2 class="section-title">事業内容</h2>
                 </div>
                 <div class="services-grid" id="servicesGrid"></div>
+            </div>
+        </section>
+
+        <!-- ============ 4. 制作実績 ============ -->
+        <section id="works" class="section section--alt">
+            <div class="section-inner">
+                <div class="section-header reveal">
+                    <span class="section-label">Works</span>
+                    <h2 class="section-title">制作実績</h2>
+                </div>
+                <!-- <div class="works-filter reveal" id="worksFilter"></div> -->
+                <div class="works-grid" id="worksGrid"></div>
+                <div class="works-footer reveal">
+                    <p class="works-footer-text">その他個別公開可能な制作動画もございます。<a href="#contact" style="text-decoration: underline; color: var(--accent-blue-light); font-weight: 500;">下記フォーム</a>よりお気軽にお問い合わせください。</p>
+                </div>
             </div>
         </section>
 
