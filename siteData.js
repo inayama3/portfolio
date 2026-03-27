@@ -71,7 +71,7 @@ const SITE_DATA = {
       description: "㈱グロウアップパートナーズ様のYouTubeチャンネル、”社長のためのマネー講座”を立ち上げ時より制作を担当。累計150本以上を制作",
       linkUrl: "https://www.youtube.com/@TATSUO-UKISHIMA",
       videoUrl: "",
-      thumbnail: "assets/work1.jpg",
+      thumbnail: "assets/work1.png",
     },
     {
       title: "デジハク 様",
