@@ -278,7 +278,7 @@ const SITE_DATA = {
     description: "映像制作のご依頼・ご相談は、下記フォームまたはメールにてお問い合わせください。内容を確認のうえ、通常2営業日以内にご返信いたします。",
     email: "info@miima.net",
     responseTime: "通常2営業日以内にご返信いたします",
-    formEndpoint: "https://script.google.com/macros/s/AKfycbz9AhkcLZ2QA7VrFAS6p0FmldjgQhqc6uZXQJG-JLtqUPjd-1Al1Ag5SrXNkkwwV6Edbg/exec",
+    formEndpoint: "https://script.google.com/macros/s/AKfycbzCUCuHMJtKvKkABaa8N6T99561gyy2-XkJ52ZleiOOXZ6s-Sb0ju1XEWckyy4utXa6/exec",
     sns: [
       { platform: "YouTube", url: "#", icon: "youtube" },
       { platform: "Instagram", url: "#", icon: "instagram" },
