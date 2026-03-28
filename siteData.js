@@ -116,7 +116,7 @@ const SITE_DATA = {
   // ─────────────────────────────────
   about: {
     profileImage: "assets/profile.png",
-    name: "<span style='font-size: 0.8em; font-weight: 500; color: var(--text-secondary);'>代表</span><br><span style='font-size: 0.6em; margin-right: 8px; color: var(--text-secondary); font-weight: normal;'>Takazumi Inayama</span>稲山 敬純",
+    name: "<span style='font-size: 0.8em; font-weight: 500; color: var(--text-secondary);'>代表</span><br>稲山 敬純<span style='font-size: 0.6em; margin-left: 8px; color: var(--text-secondary); font-weight: normal;'>Takazumi Inayama</span>",
     title: "映像クリエイター | 映像講師",
     introduction: "1990年生まれ。愛知県名古屋市出身・在住。<br>大学卒業後、製薬会社で11年間MR(医薬情報担当者)として勤務したのち、映像の道へ進み独立。<br>現在は映像制作業を中心に、専門学校講師としても活動。",
     software: ["Premiere Pro", "After Effects", "Photoshop", "Illustrator", "Capcut", "Canva"],
