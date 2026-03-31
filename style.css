@@ -1433,6 +1433,10 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 600px) {
+    .hero-catchcopy {
+        margin-top: 4rem;
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: center;
