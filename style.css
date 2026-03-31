@@ -1433,12 +1433,8 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 600px) {
-    .scroll-indicator {
-        display: none;
-    }
-
     .hero-catchcopy {
-        margin-top: 14rem;
+        margin-top: 7rem;
     }
 
     .hero-cta {
