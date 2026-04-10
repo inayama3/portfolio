@@ -336,6 +336,15 @@ function initContact(data) {
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            // --- スパム対策：日本語が含まれていない場合は送信をブロック ---
+            const messageValue = document.getElementById('contactMessage').value;
+            if (!/([ぁ-んァ-ン一-龥])/.test(messageValue)) {
+                alert("スパム対策のため、お問い合わせ内容には日本語を含めて送信してください。");
+                return;
+            }
+            // --------------------------------------------------------
+
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = '送信中...';
@@ -385,6 +394,15 @@ function initContact(data) {
         // Formspreeが未設定の場合、メールクライアントを開きます
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            // --- スパム対策：日本語が含まれていない場合は送信をブロック ---
+            const messageVal = document.getElementById('contactMessage').value;
+            if (!/([ぁ-んァ-ン一-龥])/.test(messageVal)) {
+                alert("スパム対策のため、お問い合わせ内容には日本語を含めて送信してください。");
+                return;
+            }
+            // --------------------------------------------------------
+
             const name = document.getElementById('contactName').value;
             const email = document.getElementById('contactEmail').value;
             const category = document.getElementById('contactCategory').value;
